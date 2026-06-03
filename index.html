@@ -3,54 +3,87 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pagina de prueba</title>
-
+  <title>Tienda Nova</title>
   <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
 
-  <header>
-    <h1>pAGINA DE PRUEBA PARA REPOSITORIO</h1>
-    <p></p>
+  <header class="header">
+    <div class="logo">Tienda Nova</div>
+
+    <nav class="navbar">
+      <a href="#">Inicio</a>
+      <a href="#productos">Productos</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
   </header>
 
-  <nav>
-    <a href="#">Inicio</a>
-    <a href="#">Servicios</a>
-    <a href="#">Sobre mí</a>
-    <a href="#">Contacto</a>
-  </nav>
+  <section class="hero">
+    <div class="hero-texto">
+      <h1>Compra productos modernos al mejor precio</h1>
+      <p>Encuentra artículos seleccionados para tu estilo, tu hogar y tu día a día.</p>
+      <a href="#productos" class="boton-principal">Ver productos</a>
+    </div>
+  </section>
 
-  <main class="contenedor">
-    <section class="banner">
-      <h2>Bienvenido a mi página</h2>
-      <p>A.</p>
-      <a href="#" class="boton">Ver más</a>
+  <main>
+    <section id="productos" class="productos">
+      <h2>Productos destacados</h2>
+      <p class="subtitulo">Elige entre nuestros productos más vendidos</p>
+
+      <div class="contenedor-productos">
+
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500" alt="Reloj moderno">
+          <h3>Reloj Moderno</h3>
+          <p>Diseño elegante para usar todos los días.</p>
+          <span class="precio">S/ 89.90</span>
+          <button>Comprar</button>
+        </div>
+
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500" alt="Audífonos">
+          <h3>Audífonos Pro</h3>
+          <p>Sonido claro, cómodo y con estilo moderno.</p>
+          <span class="precio">S/ 129.90</span>
+          <button>Comprar</button>
+        </div>
+
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500" alt="Zapatillas">
+          <h3>Zapatillas Urbanas</h3>
+          <p>Perfectas para caminar con comodidad y estilo.</p>
+          <span class="precio">S/ 159.90</span>
+          <button>Comprar</button>
+        </div>
+
+      </div>
     </section>
 
-    <section class="seccion">
-      <h2>Sobre esta página</h2>
+    <section id="nosotros" class="nosotros">
+      <h2>Sobre nosotros</h2>
       <p>
-        Esta pagina esta creada para prueba de repositorio en github.
+        Somos una tienda dedicada a ofrecer productos modernos, accesibles y de buena calidad.
+        Nuestro objetivo es brindar una experiencia de compra sencilla, rápida y confiable.
       </p>
     </section>
 
-    <section class="seccion">
-      <h2>Servicios</h2>
-      <p>
-       ZZZZZZ
-      </p>
-    </section>
+    <section id="contacto" class="contacto">
+      <h2>Contáctanos</h2>
+      <p>¿Tienes alguna consulta? Escríbenos y te responderemos pronto.</p>
 
-    <section class="seccion">
-      <h2>Contacto</h2>
-      <p>Correo: sebastianescate248@gmail.com</p>
-      <p>Teléfono: 902984181</p>
+      <form>
+        <input type="text" placeholder="Tu nombre">
+        <input type="email" placeholder="Tu correo">
+        <textarea placeholder="Escribe tu mensaje"></textarea>
+        <button type="submit">Enviar mensaje</button>
+      </form>
     </section>
   </main>
 
   <footer>
-    <p>© 2026 Mi Página Web - Todos los derechos reservados</p>
+    <p>© 2026 Tienda Nova - Todos los derechos reservados</p>
   </footer>
 
 </body>
